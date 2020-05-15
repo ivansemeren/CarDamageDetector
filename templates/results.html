@@ -1,0 +1,28 @@
+{% extends 'base.html'%}
+{% block body_block %}
+
+<h1 style="color:antiquewhite"> Car Care - Below are the results</h1>
+
+<div class="jumbotron2">
+    <h3 style="color:antiquewhite">Car Check: 
+        {{ g1_pic }}
+    </h3>
+    <h3 style="color:antiquewhite">Damage Check: 
+        {{ g2_pic }}
+    </h3>
+    <h3 style="color:antiquewhite">Location Check: 
+        {{ loc }}
+    </h3>
+    <h3 style="color:antiquewhite">Severity Check: 
+        {{ sev }}
+    </h3>
+    <h4 style="color:antiquewhite">Additional Services: 
+        {{ ns|linebreaks }}
+    </h4>
+</div>
+
+<div class="bottom">
+    <h5 style="color:antiquewhite">Thanks for using care portal</h5>
+</div>
+
+{% endblock %}
